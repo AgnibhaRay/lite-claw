@@ -1,0 +1,32 @@
+{
+  "agent": {
+    "provider": "ollama",
+    "model": "qwen2.5-coder:7b-instruct-q4_K_M",
+    "system": "You are lite-claw, a helpful coding assistant. Be concise.",
+    "maxTurns": 12,
+    "workspace": "."
+  },
+  "gateway": {
+    "dataDir": ""
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "allowFrom": ["*"],
+      "selfChat": false
+    }
+  },
+  "providers": {
+    "ollama": {
+      "baseURL": "http://127.0.0.1:11434"
+    },
+    "openai": {
+      "baseURL": "https://api.openai.com/v1",
+      "apiKey": ""
+    },
+    "anthropic": {
+      "baseURL": "https://api.anthropic.com",
+      "apiKey": ""
+    }
+  }
+}
